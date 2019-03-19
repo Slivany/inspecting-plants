@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>State of plants</title>
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+  {{!-- Used for responsive tables --}}
+  <link rel="stylesheet" href="style/tablesaw.css">
+  <script src="js/tablesaw.js"></script>
+  <script src="js/tablesaw-init.js"></script>
+  {{!-- Smartphones have more pixel density --}}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="/">Form</a>
+    </li>
+    <li>
+      <a href="/plants">Database</a>
+    </li>
+  </ul>
+  <div class="content">
+    {{{body}}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<h1 class="textCenter">{{title}}</h1>
+{{!-- Informs the user if no entries has been made to the database --}}
+{{#if plants}}
+  <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+    <thead>
+      <tr>
+        <th>State of plant</th>
+        <th>Worker's ID</th>
+        <th>Plant's temperature</th>
+        <th>Plant's humidity</th>
+        <th>Date and time</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each plants}}
+      <tr>
+        <td>{{statePlant}}</td>
+        <td>{{workerID}}</td>
+        <td>{{temperature}}</td>
+        <td>{{humidity}}</td>
+        <td>{{dateTime}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table> 
+{{else}}
+  <p class="textCenter">No entries has yet been made</p>
+{{/if}}

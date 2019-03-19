@@ -1,0 +1,24 @@
+{
+  "name": "assignment-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alan Slivany",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.22.2",
+    "node-dht-sensor": "0.0.34",
+    "onoff": "^3.2.1",
+    "pem": "^1.12.5",
+    "sqlite3": "^4.0.2",
+    "tablesaw": "^3.0.9"
+  }
+}

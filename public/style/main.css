@@ -1,0 +1,125 @@
+body {
+  background-color: grey
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 2px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+/* To make sure that all labels have the same size and are properly aligned */
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+/* To give a little highlight on active elements */
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+
+/* To position the buttons to the same position of the text fields */
+.button {
+  padding-left: 90px; /* same size as the label elements */
+}
+
+/* This extra margin represent roughly the same space as the space
+  between the labels and their text fields */
+button {
+  margin-left: .5em;
+}
+
+  /* Change color and font of the feedback text */
+.feedback {
+  color: tomato;
+  font-weight: bold;
+}
+
+ /* Stylize the navigation menu */
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0.6%;
+  font-weight: bold;
+  background-color: rgb(109, 102, 102);
+  width: 6rem;
+  border: 1px solid black;
+  text-align: center
+}
+
+li {
+  padding: 0.4rem;
+}
+
+/* Limit content to a comfortable size */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ /* Basic Mozilla table stylization */
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+table, th, td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* For smartphones in different orientations */
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+  .content {
+    width: 90%;
+  }
+}
+
+/* Larger screens such as desktops */
+@media only screen and (min-width: 1500px) {
+  .content {
+    width: 60%;
+  }
+}
